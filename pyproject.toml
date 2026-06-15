@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "saxo"
+dynamic = ["version"]
+description = 'Symbolic Aggregate approXimation (SAX) Optimized with MODL (SAX-O)'
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+keywords = []
+authors = [
+  { name="Pierre Nodet", email="pierre.nodet@orange.com" },
+]
+dependencies = [
+  "khiops>=11.0.0.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["saxo"]
+
+[tool.hatch.build.targets.sdist]
+exclude = ["tests", "benchmark", "examples"]
+
+[tool.hatch.metadata]
+allow-direct-references= true
+
+[project.urls]
+Homepage = "https://github.com/KhiopsLab/saxo"
+
+[dependency-groups]
+dev=[
+  "ipykernel",
+  "pytest", 
+  "pytest-cov", 
+  "pytest-xdist",
+  "aeon",
+  "matplotlib",
+]
+
+[tool.hatch.version]
+source = "vcs"
