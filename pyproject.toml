@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "saxo"
 dynamic = ["version"]
-description = 'Symbolic Aggregate approXimation (SAX) Optimized with MODL (SAX-O)'
+description = 'Symbolic Aggregate approXimation Optimized with MODL'
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"

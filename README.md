@@ -3,7 +3,9 @@
 
 # SAXO
 
-Symbolic Aggregate approXimation (SAX) Optimized with MODL (SAX-O)
+> **S**ymbolic **A**ggregate appro**X**imation **O**ptimized with MODL
+
+SAXO is a data-driven symbolic representation for time series. Unlike standard SAX which relies on equal-sized intervals and Gaussian distributions, SAXO optimizes both time and value discretization using a non-parametric Bayesian approach (MODL).
 
 ## Install
 
@@ -86,7 +88,7 @@ for i in range(3):
 plt.show()
 ```
 
-You can also do anomaly detection with SAXO (by computing the distance between the time serie and the typical time series associated with its representation):
+You can also do anomaly detection with SAXO (by computing the distance between the time series and the typical time series associated with its representation):
 
 ```python
 y_pred_saxo = saxo.score_samples(X)
@@ -104,9 +106,9 @@ plt.show()
 
 **SAXO representation**
 
-> Alexis Bondu, Marc Boullé and Benoît Grossin. "SAXO: An optimized data-driven symbolic representation of time series". International joint conference on neural networks (IJCNN) IEEE. 2013. 
+> Alexis Bondu, Marc Boullé and Benoît Grossin. "SAXO: An optimized data-driven symbolic representation of time series". *International Joint Conference on Neural Networks (IJCNN)*. IEEE, 2013.
 
-> Alexis Bondu, Marc Boullé, and Antoine Cornuéjols. "Symbolic representation of time series: A hierarchical coclustering formalization." International Workshop on Advanced Analytics and Learning on Temporal Data. 2015.
+> Alexis Bondu, Marc Boullé, and Antoine Cornuéjols. "Symbolic representation of time series: A hierarchical coclustering formalization." *Advanced Analytics and Learning on Temporal Data (AALTD)*. Springer, 2015.
 
 **Anomaly detection with coclustering**
 
