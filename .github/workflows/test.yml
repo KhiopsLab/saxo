@@ -24,5 +24,4 @@ jobs:
           fi
           rm -f "$TEMP_DEB"
       - uses: astral-sh/setup-uv@v5
-      - run: uv run pytest -n auto --cov --cov-report=xml tests
-      - uses: codecov/codecov-action@v5
+      - run: uv run pytest -n auto tests
