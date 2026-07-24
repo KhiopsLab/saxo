@@ -116,11 +116,6 @@ plt.show()
 
 ## Development
 
-Create a local conda environement with khiops (skip this if you can install khiops-python with pip, but requires a global khiops-core install):
-- ```conda create -p .venv python=3.12```
-- ```conda activate .venv```
-- ```conda install -c conda-forge -c khiops-dev khiops=11.0.0.3```
-
 Formatting and linting is done with ruff as a [pre-commit](https://pre-commit.com/):
 - install: ```pre-commit install```, 
 - format and lint: ```pre-commit run --all-files``` (automatically done before a commit).
