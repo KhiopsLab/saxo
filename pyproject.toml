@@ -14,7 +14,7 @@ authors = [
   { name="Pierre Nodet", email="pierre.nodet@orange.com" },
 ]
 dependencies = [
-  "khiops>=11.0.0.3",
+  "khiops>=11.0.1.0",
 ]
 
 [tool.hatch.build.targets.wheel]
