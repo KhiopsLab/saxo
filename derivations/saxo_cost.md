@@ -76,7 +76,7 @@ $$
 C_{\text{MODL}}(M_0^t) = \log m^t + \log N^t + \log \binom{m^t + N^t - 1}{N^t-1} + 2 \log m^t! - \sum_{s=1}^{N}\log p^t_s!\\
 $$
 
-Problem, what if all bi-clusters $M^t$ are trained from different datasets $\mathcal{D}_t \neq \mathcal{D}$ with $\mathcal{D}=\bigcup_{t=1}^{k_T}\mathcal{D}_t$ ?
+Problem, what if all bi-clusters $M^t$ are trained from different datasets $\mathcal{D}\_t \neq \mathcal{D}$ with $\mathcal{D}=\bigcup_{t=1}^{k_T}\mathcal{D}_t$ ?
 
 Heuristic: assumes that $m^t=\frac{m}{k_T}$, $p_s^t=\frac{p_s}{k_T}$ and $N^t=N$ ?
 
